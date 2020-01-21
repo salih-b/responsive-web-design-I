@@ -82,6 +82,8 @@ footer{
 .RH{
 	text-align: center;
 	padding: 2% 1% 5%;
+	display:flex ;
+	justify-content: center;
 }
 .navigation{
 	display:flex;
@@ -221,7 +223,17 @@ header.spheader h1{
         flex-direction: row-reverse;
         width: 100%;
         flex-wrap: wrap-reverse;
-        }
+		}
+		nav.navigation img{
+			width: 33%;
+		}
+		.RH{
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+		.RH img{
+			width:33%;
+		}
     }
 @media (max-width: 500px){
     .navigation{
@@ -244,5 +256,8 @@ header.spheader h1{
     .RH{
         display: flex;
     justify-content: center;
-    }
+	}
+	nav.navigation img{
+		width: unset;
+	}
 }
